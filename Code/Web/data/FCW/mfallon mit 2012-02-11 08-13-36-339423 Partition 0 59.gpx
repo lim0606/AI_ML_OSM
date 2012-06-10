@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpx>
+   <trk>
+      <trkseg>
+         <trkpt lat="42.278648" lon="-71.079413">
+            <time>2012-2-11T13:36:39Z</time>
+         </trkpt>
+         <trkpt lat="42.278593" lon="-71.079200">
+            <time>2012-2-11T13:36:40Z</time>
+         </trkpt>
+         <trkpt lat="42.278567" lon="-71.079010">
+            <time>2012-2-11T13:36:41Z</time>
+         </trkpt>
+         <trkpt lat="42.278545" lon="-71.078810">
+            <time>2012-2-11T13:36:42Z</time>
+         </trkpt>
+         <trkpt lat="42.278525" lon="-71.078620">
+            <time>2012-2-11T13:36:43Z</time>
+         </trkpt>
+         <trkpt lat="42.278510" lon="-71.078422">
+            <time>2012-2-11T13:36:44Z</time>
+         </trkpt>
+         <trkpt lat="42.278492" lon="-71.078223">
+            <time>2012-2-11T13:36:45Z</time>
+         </trkpt>
+         <trkpt lat="42.278477" lon="-71.078025">
+            <time>2012-2-11T13:36:46Z</time>
+         </trkpt>
+         <trkpt lat="42.278457" lon="-71.077827">
+            <time>2012-2-11T13:36:47Z</time>
+         </trkpt>
+         <trkpt lat="42.278438" lon="-71.077620">
+            <time>2012-2-11T13:36:48Z</time>
+         </trkpt>
+         <trkpt lat="42.278412" lon="-71.077415">
+            <time>2012-2-11T13:36:49Z</time>
+         </trkpt>
+         <trkpt lat="42.278388" lon="-71.077217">
+            <time>2012-2-11T13:36:50Z</time>
+         </trkpt>
+         <trkpt lat="42.278373" lon="-71.077025">
+            <time>2012-2-11T13:36:51Z</time>
+         </trkpt>
+      </trkseg>
+   </trk>
+</gpx>

@@ -1,0 +1,42 @@
+(Code can be reached by
+1)svn co svn+ssh://svn.csail.mit.edu/afs/csail.mit.edu/proj/drivehistory/REPOS/drivehistory_repo drivehistory_repo
+2) /csail/fisher3/users/donglai/drivehistory_repo/
+)
+0) Data Parsing: Flow Chart: parsing_diagram.png
+Input: .vsb file from can bus
+Output:
+a) .mat file: parse vsb log files into matlab structure(gps info) (drivehistory_repo/matlab/Parsecode/log2mat/logparse.m)
+b) .gpx file: parse matlab structure into gpx file (drivehistory_repo/matlab/Parsecode/mat2gpx/w_gpxwriter.m)
+c) .mat file: parse .rt file(road segment assignment) into matlab data structure (drivehistory_repo/matlab/Parsecode/rt_py2mat/rt_py2mat.m)
+d) .mat file: parse vsb log file into matlab structure(FCW info) (drivehistory_repo/matlab/FCW/parse_FCW.m)
+
+1) Build Map Model:
+Input: zipped xml file from OpenStreetMap database (http://metro.teczno.com/)
+Output:
+a) pickled python class of node/edge of the graph (drivehistory_repo/matlab/ParseCode/gpx2rt_py/osm_map.py)
+
+2) PHP gpx visualization:
+Input: gpx files generated from log message
+Output:
+a) php webpage to display (/afs/csail.mit.edu/proj/drivehistory/www/data/index.php)
+
+3) Road segment assignment:
+Input: Map Model built in 1), gpx files
+Output:
+a) .rt file: Assignment found by nearest neighbour search and simple filter out outliers (drivehistory_repo/matlab/Parsecode/gpx2rt_py/osm_search.py)
+
+4) Lane segment assignment:
+Input: Map Model built in 1), gpx files
+Output:
+a) Lane Assignments: HMM and HSMM model with Mixture of Gaussian Observation (drivehistory_repo/matlab/LaneAssign/hmm_demo.py)
+
+5) Commute Route Topic Model:
+Input: routes.mat created by 0.c) rt_py2mat.m
+Output:
+a) Clustered common routes: Independent DP topic model with shared hyper-parameter (drivehistory_repo/matlab/DP_MOG/vdpgm/dp_grow.m)
+
+6) Curvature Estimation:
+Input: routes.mat created by 0.c) rt_py2mat.m
+Output:
+a) Piece-wise linear curvature estimation: Locally circle fitting and Globally clustering (drivehistory_repo/matlab/FCW/cur_est.m)
+b) Mapped Steering Wheel Mapping

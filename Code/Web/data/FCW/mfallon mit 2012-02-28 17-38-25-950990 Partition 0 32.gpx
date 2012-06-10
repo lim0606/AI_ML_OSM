@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpx>
+   <trk>
+      <trkseg>
+         <trkpt lat="42.354232" lon="-71.111305">
+            <time>2012-2-28T22:44:43Z</time>
+         </trkpt>
+         <trkpt lat="42.354137" lon="-71.111252">
+            <time>2012-2-28T22:44:44Z</time>
+         </trkpt>
+         <trkpt lat="42.354042" lon="-71.111160">
+            <time>2012-2-28T22:44:45Z</time>
+         </trkpt>
+         <trkpt lat="42.353965" lon="-71.111053">
+            <time>2012-2-28T22:44:46Z</time>
+         </trkpt>
+         <trkpt lat="42.353892" lon="-71.110945">
+            <time>2012-2-28T22:44:47Z</time>
+         </trkpt>
+         <trkpt lat="42.353838" lon="-71.110862">
+            <time>2012-2-28T22:44:48Z</time>
+         </trkpt>
+         <trkpt lat="42.353793" lon="-71.110793">
+            <time>2012-2-28T22:44:49Z</time>
+         </trkpt>
+         <trkpt lat="42.353775" lon="-71.110763">
+            <time>2012-2-28T22:44:50Z</time>
+         </trkpt>
+         <trkpt lat="42.353763" lon="-71.110740">
+            <time>2012-2-28T22:44:51Z</time>
+         </trkpt>
+         <trkpt lat="42.353752" lon="-71.110725">
+            <time>2012-2-28T22:44:52Z</time>
+         </trkpt>
+         <trkpt lat="42.353747" lon="-71.110717">
+            <time>2012-2-28T22:44:53Z</time>
+         </trkpt>
+      </trkseg>
+   </trk>
+</gpx>

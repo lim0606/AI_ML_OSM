@@ -1,0 +1,33 @@
+digraph TestGraph {
+  node [shape=ellipse fontsize=10 fontname="Courier"        ]; ell_a ell_c ell_dotmap;
+  node [shape=box     fontsize=13 fontname="Verdana"        ]; box_b box_c box_parse box_assignment;
+  //node [shape=diamond fontsize= 9 fontname="Times new Roman"]; dia_b ;
+
+  "ell_a" [label="Vehicle Logs, vsb files"];
+  "ell_c" [label="Open Street Map Stripper\DW"];
+  "box_b" [label="RT-to-matlab Converter\n ParseCode\\rt_py2mat\\rt_py2mat.m\nDW"];
+  "box_c" [label="DAG Grapher\nmatlab script\n analysis_launch.m\n MF"];
+
+  "box_parse" [label="VSB-to-matlab converter\n ParseCode\\log2mat\\logparse.m \n MF and Ford"];
+  "box_smooth" [label="Lat & Lon Smoothing\nSmoothSignals\\smooth_batch.m \n MF"];
+  "box_gpx" [label="matlab-to-gpx converter (php visualization)\n ParseCode\\mat2gpx\\w_preprocess.m \n DW"];
+  "box_osm" [label="Create Road Network\n osm_map.py: Parse osm data(xml) into Waypoints & Ways\n DW"];
+  "box_assignment" [label="Lane Assignment Module\n osm_search.py: Assign road segment to GPS data in gpx files\n DW"];
+  "ell_dotmap" [label="PNG of Route"];
+
+  "ell_a" -> "box_parse"  [label="All sensor messages\nGPS measurements @ 10Hz, Millions of Samples\nOne file per journey" fontname="Verdana" fontsize=8];
+
+  "box_parse" -> "box_smooth"  [label="All sensor messages\n 1 Matlab datafile per journey" fontname="Verdana" fontsize=8];
+  "box_smooth" -> "box_gpx"  [label="All sensor messages\nplus smoothed lat and lon\n1 Matlab datafile per journey " fontname="Verdana" fontsize=8];
+  "box_gpx" -> "box_assignment"  [label="time plus smoothed lat and lon\n1 gpx datafile per journey " fontname="Verdana" fontsize=8];
+
+  "ell_c" -> "box_osm"  [label="Complete set of road segments\n buildings & waypoints & ways \n42.3-42.4 N,71.2-71.0W \n" fontname="Verdana" fontsize=8];
+  "box_osm" -> "box_assignment"  [label="Complete set of road segments\n organized waypoints & ways \n " fontname="Verdana" fontsize=8];
+  "box_assignment" -> "box_b"  [label=".rt text files, one per journey\n each journey divided into typically 20 road segments " fontname="Verdana" fontsize=8];
+  "box_b" -> "box_c"  [label="One file (drive_data.mat) containing:\n each journey divided into typically 20 road segments\nIndex of each road segment from OSM" fontname="Verdana" fontsize=8];
+  "box_c" -> "ell_dotmap"  [label="(Sparse) state transition matrix" fontname="Verdana" fontsize=8];
+
+
+
+
+}
