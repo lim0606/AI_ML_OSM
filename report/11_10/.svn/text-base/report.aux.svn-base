@@ -1,0 +1,11 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{0. Plan}{1}}
+\@writefile{toc}{\contentsline {section}{1. Fixed Map, One Road, One Route, GPS Location}{1}}
+\@writefile{toc}{\contentsline {subsection}{1.1) i.i.d-Gaussian Mixture}{1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces two lane center lines calculated from the way points from OSM}}{2}}
+\@writefile{toc}{\contentsline {subsection}{1.2) Weak-Limit HDP-HMM-Gaussian Mixture}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Up: state transitions, Mid: Global look of the lane assignment, Down: Local look of the lane assignment}}{3}}
+\@writefile{toc}{\contentsline {subsection}{1.3) HSMM-Gaussian Mixture}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Graphical Model}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparison Result}}{4}}
+\newlabel{LastPage}{{}{4}}

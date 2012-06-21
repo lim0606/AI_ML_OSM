@@ -1,0 +1,15 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{0. Intro}{1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Beacon ST}}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 15 routes}}{2}}
+\@writefile{toc}{\contentsline {section}{1. Independent Mixture of Gaussian}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces independent MoG model}}{3}}
+\@writefile{toc}{\contentsline {section}{2) Mixture of Gaussian with shared prior}{4}}
+\@writefile{toc}{\contentsline {subsection}{2.1) Graphical Model:}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Graphical Model}}{4}}
+\@writefile{toc}{\contentsline {subsection}{2.2) Result}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{2.2.1) Shared topics}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison Result}}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{2.2.2) Rate of KL divergence}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comparison Result}}{6}}
+\newlabel{LastPage}{{}{6}}
